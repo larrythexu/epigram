@@ -9,7 +9,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create-drop # todo: change
+      ddl-auto: update
     database: postgresql
     show-sql: true
 
