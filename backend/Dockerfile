@@ -1,9 +1,9 @@
 # Build
 FROM maven:3.9.8-eclipse-temurin-21 AS build
 WORKDIR /app
-COPY epigramsite/pom.xml .
-COPY epigramsite/src src
-RUN ./mvnw clean package -DskipTests
+COPY pom.xml .
+COPY src src
+RUN mvn clean package -DskipTests
 
 # Run
 FROM eclipse-temurin:21-jre

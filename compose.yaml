@@ -1,7 +1,7 @@
 services:
   epigram:
     build:
-      context: .
+      context: ./backend
       dockerfile: Dockerfile
     environment:
       SPRING_PROFILES_ACTIVE: docker
